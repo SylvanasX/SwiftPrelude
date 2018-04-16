@@ -1,0 +1,6 @@
+framework module Pods_SwiftPrelude_Example {
+  umbrella header "Pods-SwiftPrelude_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

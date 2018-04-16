@@ -1,0 +1,6 @@
+framework module SwiftPrelude {
+  umbrella header "SwiftPrelude-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -31,7 +31,7 @@
 		0AEDD57443BA7476C70E0AD3 /* Pods-SwiftPrelude_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPrelude_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPrelude_Example/Pods-SwiftPrelude_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1E5C633048766FC77973E748 /* Pods-SwiftPrelude_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPrelude_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPrelude_Example/Pods-SwiftPrelude_Example.release.xcconfig"; sourceTree = "<group>"; };
 		44570D053721DA6FAAB057A0 /* Pods_SwiftPrelude_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPrelude_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F11D6BB26C5BC2B46A32AD3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4F11D6BB26C5BC2B46A32AD3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftPrelude_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPrelude_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,11 +42,11 @@
 		607FACE51AFB9204008FA782 /* SwiftPrelude_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPrelude_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9DB5D3741207EDE7B1B3A0B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9DB5D3741207EDE7B1B3A0B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A7D90A741C9B85AB4922703F /* Pods-SwiftPrelude_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPrelude_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPrelude_Tests/Pods-SwiftPrelude_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0415000B36642A7C23A32 /* Pods_SwiftPrelude_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPrelude_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F066D9AB2258CA20F052044A /* Pods-SwiftPrelude_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPrelude_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPrelude_Tests/Pods-SwiftPrelude_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA844D8055344CC4B973CA0B /* SwiftPrelude.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftPrelude.podspec; path = ../SwiftPrelude.podspec; sourceTree = "<group>"; };
+		FA844D8055344CC4B973CA0B /* SwiftPrelude.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftPrelude.podspec; path = ../SwiftPrelude.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
