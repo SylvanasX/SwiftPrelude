@@ -47,3 +47,5 @@ infix operator %~: LensSetPrecedence
 // Lens %~~
 infix operator %~~: LensSetPrecedence
 
+infix operator <>: FunctionCompositionPrecedence
+

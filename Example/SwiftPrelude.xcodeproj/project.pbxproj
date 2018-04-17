@@ -46,7 +46,7 @@
 		A7D90A741C9B85AB4922703F /* Pods-SwiftPrelude_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPrelude_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPrelude_Tests/Pods-SwiftPrelude_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0415000B36642A7C23A32 /* Pods_SwiftPrelude_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPrelude_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F066D9AB2258CA20F052044A /* Pods-SwiftPrelude_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPrelude_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPrelude_Tests/Pods-SwiftPrelude_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA844D8055344CC4B973CA0B /* SwiftPrelude.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftPrelude.podspec; path = ../SwiftPrelude.podspec; sourceTree = "<group>"; };
+		FA844D8055344CC4B973CA0B /* SwiftPrelude.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftPrelude.podspec; path = ../SwiftPrelude.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
