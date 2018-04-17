@@ -33,6 +33,7 @@ SwiftPrelude.
   s.source_files = 'SwiftPrelude/Classes/**/*'
 
   s.static_framework = true
+  s.swift_version = '4.0'
   
   # s.resource_bundles = {
   #   'SwiftPrelude' => ['SwiftPrelude/Assets/*.png']
