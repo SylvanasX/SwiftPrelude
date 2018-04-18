@@ -22,3 +22,11 @@ public func <> <A> (f: @escaping (A) -> A, g: @escaping (A) -> A) -> (A) -> A {
         g(f($0))
     }
 }
+
+public func flip <A, B, C> (_ f: @escaping (A) -> (B) -> C) -> (B) -> (A) -> C {
+    return { b in { a in f(a)(b) }}
+}
+
+public func zurry <A> (_ f: () -> A) -> A {
+    return f()
+}
