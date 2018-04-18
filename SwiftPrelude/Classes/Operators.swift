@@ -29,6 +29,8 @@ precedencegroup LensCompositionPrecedence {
 // f(x)
 infix operator |>: LeftApplyPrecedence
 
+infix operator ||>: LeftApplyPrecedence
+
 // g(f(x))
 infix operator >>>: FunctionCompositionPrecedence
 
