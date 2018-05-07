@@ -46,3 +46,16 @@ infix operator %~~: LensSetPrecedence
 
 infix operator <>: FunctionCompositionPrecedence
 
+// Semigroup
+prefix operator <>
+
+// Semigroup
+postfix operator <>
+
+
+
+
+
+
+
+
