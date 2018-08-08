@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftPrelude'
-  s.version          = '0.1.1'
+  s.version          = '0.1.9'
   s.summary          = 'SwiftPrelude'
 
 # This description is used to generate tags and improve search results.

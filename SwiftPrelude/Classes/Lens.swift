@@ -1,10 +1,4 @@
-//
-//  File.swift
-//  SwiftPrelude_Example
-//
-//  Created by Sylvanas on 2018/4/17.
-//  Copyright © 2018 CocoaPods. All rights reserved.
-//
+//  Created by Sylvanas
 
 import Foundation
 public struct Lens <Whole, Part> {

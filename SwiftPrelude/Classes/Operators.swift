@@ -1,9 +1,4 @@
-//
-//  Operators.swift
-//  Pods-SwiftPrelude_Example
-//
-//  Created by Sylvanas on 2018/4/17.
-//
+//  Created by Sylvanas
 
 precedencegroup LeftApplyPrecedence {
     associativity: left
@@ -29,6 +24,8 @@ precedencegroup LensCompositionPrecedence {
 // f(x)
 infix operator |>: LeftApplyPrecedence
 
+infix operator ||>: LeftApplyPrecedence
+
 // g(f(x))
 infix operator >>>: FunctionCompositionPrecedence
 
@@ -46,4 +43,19 @@ infix operator %~: LensSetPrecedence
 
 // Lens %~~
 infix operator %~~: LensSetPrecedence
+
+infix operator <>: FunctionCompositionPrecedence
+
+// Semigroup
+prefix operator <>
+
+// Semigroup
+postfix operator <>
+
+
+
+
+
+
+
 
