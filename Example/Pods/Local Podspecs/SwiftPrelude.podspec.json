@@ -1,6 +1,6 @@
 {
   "name": "SwiftPrelude",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "SwiftPrelude",
   "description": "SwiftPrelude.",
   "homepage": "https://github.com/sy/SwiftPrelude",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/sy/SwiftPrelude.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
