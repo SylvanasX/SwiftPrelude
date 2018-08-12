@@ -1,61 +1,22 @@
-//  Created by Sylvanas
+//
+//  Operators.swift
 
-precedencegroup LeftApplyPrecedence {
-    associativity: left
-    higherThan: AssignmentPrecedence
-    lowerThan: TernaryPrecedence
-}
-
-precedencegroup FunctionCompositionPrecedence {
-    associativity: right
-    higherThan: LeftApplyPrecedence
-}
-
-precedencegroup LensSetPrecedence {
-    associativity: left
-    higherThan: FunctionCompositionPrecedence
-}
-
-precedencegroup LensCompositionPrecedence {
-    associativity: right
-    higherThan: LensSetPrecedence
-}
-
-// f(x)
-infix operator |>: LeftApplyPrecedence
-
-infix operator ||>: LeftApplyPrecedence
+infix operator <|: infixr0
+infix operator |>: infixl1
+infix operator ||>: infixl1
 
 // g(f(x))
-infix operator >>>: FunctionCompositionPrecedence
+infix operator >>>: infixr9
+infix operator <<<: infixr9
 
-// Lens set
-infix operator .~: LensSetPrecedence
+infix operator >=>: infixr1
 
-// Lens view
-infix operator ^*: LeftApplyPrecedence
-
-// Lens compose
-infix operator ..: LensCompositionPrecedence
-
-// Lens over
-infix operator %~: LensSetPrecedence
-
-// Lens %~~
-infix operator %~~: LensSetPrecedence
-
-infix operator <>: FunctionCompositionPrecedence
-
-// Semigroup
+infix operator <>: infixr5
 prefix operator <>
-
-// Semigroup
 postfix operator <>
 
+infix operator <|>: infixl3
 
+infix operator <¢>: infixl4
 
-
-
-
-
-
+infix operator <*>: infixl4

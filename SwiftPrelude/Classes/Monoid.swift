@@ -1,10 +1,16 @@
 //
 //  Monoid.swift
-//  Pods-SwiftPrelude_Example
-//
-//  Created by Sylvanas on 2018/5/7.
-//
 
 public protocol Monoid: Semigroup {
-    static func identity() -> Self
+    static var empty: Self { get }
 }
+
+extension String: Monoid {
+    public static let empty = ""
+}
+
+extension Array: Monoid {
+    public static var empty: Array { return [] }
+}
+
+

@@ -1,24 +1,47 @@
 //
 //  Semigroup.swift
-//  Pods-SwiftPrelude_Example
-//
-//  Created by Sylvanas on 2018/5/7.
-//
 
 public protocol Semigroup {
-    func op(_ other: Self) -> Self
+    static func <> (lhs: Self, rhs: Self) -> Self
 }
 
-public func <> <S: Semigroup> (lhs: S, rhs: S) -> S {
-    return lhs.op(rhs)
+public prefix func <> <S: Semigroup> (rhs: S) -> (S) -> S {
+    return { lhs in lhs <> rhs }
 }
 
-// <>b
-public prefix func <> <S: Semigroup> (b: S) -> (S) -> S {
-    return { $0 <> b }
+public postfix func <> <S: Semigroup> (lhs: S) -> (S) -> S {
+    return { rhs in lhs <> rhs }
 }
 
-// a<>
-public postfix func <> <S: Semigroup> (a: S) -> (S) -> S {
-    return { a <> $0 }
+public func concat <S: Sequence> (_ xs: S, _ e: S.Element) -> S.Element where S.Element: Semigroup {
+    return xs.reduce(e, <>)
 }
+
+extension String: Semigroup {
+    public static func <> (lhs: String, rhs: String) -> String {
+        return lhs + rhs
+    }
+}
+
+extension Array: Semigroup {
+    public static func <> (lhs: Array, rhs: Array) -> Array {
+        return lhs + rhs
+    }
+}
+
+public func <> <A> (f: @escaping (A) -> A, g: @escaping (A) -> A) -> (A) -> (A) {
+    return f >>> g
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
