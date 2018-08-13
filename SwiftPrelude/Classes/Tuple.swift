@@ -1,12 +1,9 @@
 //
 //  Tuple.swift
-//  Pods-SwiftPrelude_Example
-//
-//  Created by ptyuan on 2018/8/8.
-//
 
-import Foundation
-
+public func tuple <A, B> (_ a: A) -> (B) -> (A, B) {
+    return { b in (a, b) }
+}
 
 public func first <A, B> (_ x: (A, B)) -> A {
     return x.0
@@ -15,3 +12,29 @@ public func first <A, B> (_ x: (A, B)) -> A {
 public func second <A, B> (_ x: (A, B)) -> B {
     return x.1
 }
+
+public func >>> <A, B, C> (_ ab: (A, B), _ bc: (B, C)) -> (A, C) {
+    return (ab.0, bc.1)
+}
+
+public func <<< <A, B, C> (_ bc: (B, C), _ ab: (A, B)) -> (A, C) {
+    return (ab.0, bc.1)
+}
+
+public func <> <A: Semigroup, B: Semigroup> (_ ab1: (A, B), _ ab2: (A, B)) -> (A, B) {
+    return (ab1.0 <> ab2.0, ab1.1 <> ab2.1)
+}
+
+public func empty<A: Monoid, B: Monoid>() -> (A, B) {
+    return (A.empty, B.empty)
+}
+
+
+
+
+
+
+
+
+
+

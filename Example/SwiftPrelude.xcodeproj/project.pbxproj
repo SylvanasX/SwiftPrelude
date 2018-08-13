@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0AEDD57443BA7476C70E0AD3 /* Pods-SwiftPrelude_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPrelude_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPrelude_Example/Pods-SwiftPrelude_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1113DAD4211E691C0025FBE1 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1E5C633048766FC77973E748 /* Pods-SwiftPrelude_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPrelude_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPrelude_Example/Pods-SwiftPrelude_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3DF02A4F20859B98008CBF01 /* LensTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensTests.swift; sourceTree = "<group>"; };
 		44570D053721DA6FAAB057A0 /* Pods_SwiftPrelude_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPrelude_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +105,7 @@
 		607FACD21AFB9204008FA782 /* Example for SwiftPrelude */ = {
 			isa = PBXGroup;
 			children = (
+				1113DAD4211E691C0025FBE1 /* MyPlayground.playground */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
