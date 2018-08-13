@@ -2,7 +2,13 @@
 //  Sequence.swift
 
 public func mapOptional <S: Sequence, A> (_ f: @escaping (S.Element) -> A?) -> (S) -> [A] {
-    return { xs in xs.flatMap(f) }
+    return { xs in
+        #if swift(>=4.1)
+        return xs.compactMap(f)
+        #else
+        return xs.flatMap(f)
+        #endif
+    }
 }
 
 public func catOptionals <S: Sequence, A> (_ xs: S) -> [A] where S.Element == A? {
@@ -37,7 +43,13 @@ public func apply <S: Sequence, T: Sequence, A> (_ fs: S) -> (T) -> [A] where S.
 
 
 public func flatMap <S: Sequence, A> (_ f: @escaping (S.Element) -> A) -> (S) -> [A] {
-    return { xs in xs.flatMap(f) }
+    return { xs in
+        #if swift(>=4.1)
+        return xs.compactMap(f)
+        #else
+        return xs.flatMap(f)
+        #endif
+    }
 }
 
 extension Sequence where Element: Monoid {
