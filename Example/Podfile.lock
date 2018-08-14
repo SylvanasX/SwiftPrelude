@@ -1,5 +1,5 @@
 PODS:
-  - SwiftPrelude (0.1.9)
+  - SwiftPrelude (0.2.0)
 
 DEPENDENCIES:
   - SwiftPrelude (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftPrelude: 9f59812e3761eff10462651f341373278ff18600
+  SwiftPrelude: ed1339d8e6103a9cd40d7cb4df0cabb2946dc9ee
 
 PODFILE CHECKSUM: 4c99d0bbde38e7ff1ea0609ef248e0988cd7e4c4
 

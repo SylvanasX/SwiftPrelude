@@ -15,8 +15,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let x = concat(["1","2","3","4"], "!")
-        print(x)
+        testZip()
+    }
+    
+    private func testZip() {
+        let array1 = ["1", "2", "3"]
+        let array2 = [4, 5, 6, 7, 8]
+        let array3 = ["AAA", "BBB"]
+        let r2 = zip2(array1, array2)
+        let r3 = zip3(array1, array2, array3)
+        let r2f = zip2(with: { "\($0) \($1)!"} )(array1, array2)
+        print(r2f)
     }
 
     override func didReceiveMemoryWarning() {
