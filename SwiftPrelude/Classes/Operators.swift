@@ -22,8 +22,8 @@ infix operator <¢>: infixl4
 infix operator <*>: infixl4
 
 // Lens
-infix operator %~: infixr4 // over
-infix operator .~: infixr4 // set
-infix operator ^*: infixl8 // view
-infix operator ..: infixr9 // compose
-infix operator %~~: infixr4 // over part whole
+infix operator %~: infixr10 // over
+infix operator .~: infixr10 // set
+infix operator ^*: infixl1 // view
+infix operator ..: infixr11 // compose
+infix operator %~~: infixr10 // over part whole

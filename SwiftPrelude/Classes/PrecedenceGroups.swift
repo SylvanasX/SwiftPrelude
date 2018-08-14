@@ -113,4 +113,31 @@ precedencegroup infixr9 {
     higherThan: infixl9
 }
 
+// 10
+precedencegroup infixl10 {
+    associativity: left
+    higherThan: infixl9
+}
+
+precedencegroup infixr10 {
+    associativity: right
+    higherThan: infixl10
+}
+
+// 11
+precedencegroup infixl11 {
+    associativity: left
+    higherThan: infixl10
+}
+
+precedencegroup infixr11 {
+    associativity: right
+    higherThan: infixl11
+}
+
+
+
+
+
+
 
