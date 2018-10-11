@@ -116,7 +116,7 @@ precedencegroup infixr9 {
 // 10
 precedencegroup infixl10 {
     associativity: left
-    higherThan: infixl9
+    higherThan: infixr9
 }
 
 precedencegroup infixr10 {
@@ -127,7 +127,7 @@ precedencegroup infixr10 {
 // 11
 precedencegroup infixl11 {
     associativity: left
-    higherThan: infixl10
+    higherThan: infixr10
 }
 
 precedencegroup infixr11 {
