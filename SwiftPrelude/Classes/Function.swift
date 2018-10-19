@@ -19,9 +19,9 @@ public func |> <A> (_ a: A, _ f: (inout A) -> Void) -> A {
     return a
 }
 
-//public func ||> <A, B> (xs: [A], f: (A) -> B) -> [B] {
-//    return xs.map(f)
-//}
+public func ||> <A, B> (xs: [A], f: (A) -> B) -> [B] {
+    return xs.map(f)
+}
 
 public func >>> <A, B, C> (f: @escaping (A) -> B, g: @escaping (B) -> C) -> (A) -> C {
     return { g(f($0)) }
