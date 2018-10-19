@@ -9,12 +9,36 @@ public func |> <A, B> (x: A, f: (A) -> B) -> B {
     return f(x)
 }
 
+public func |> <A> (_ a: inout A, _ f: (inout A) -> Void) -> Void {
+    f(&a)
+}
+
+public func |> <A> (_ a: A, _ f: (inout A) -> Void) -> A {
+    var a = a
+    f(&a)
+    return a
+}
+
 //public func ||> <A, B> (xs: [A], f: (A) -> B) -> [B] {
 //    return xs.map(f)
 //}
 
 public func >>> <A, B, C> (f: @escaping (A) -> B, g: @escaping (B) -> C) -> (A) -> C {
     return { g(f($0)) }
+}
+
+public func <> <A> (f: @escaping (inout A) -> Void, g: @escaping (inout A) -> Void) -> (inout A) -> Void {
+    return {
+        f(&$0)
+        g(&$0)
+    }
+}
+
+public func <> <A: AnyObject> (f: @escaping (A) -> Void, g: @escaping (A) -> Void) -> (A) -> Void {
+    return {
+        f($0)
+        g($0)
+    }
 }
 
 public func <<< <A, B, C> (g: @escaping (B) -> C, f: @escaping (A) -> B) -> (A) -> C {

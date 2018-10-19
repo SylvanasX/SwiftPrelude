@@ -42,3 +42,47 @@ public func mver <S: AnyObject, A> (
 public func mut <S: AnyObject, A> (_ setter: (@escaping (inout A) -> Void) -> (S) -> Void, _ value: A) -> (S) -> Void {
     return mver(setter, { $0 = value })
 }
+
+
+//// Lens
+//infix operator %~: infixr10 // over
+//infix operator .~: infixr10 // set
+//infix operator ^*: infixl1 // view
+//infix operator ..: infixr11 // compose
+//infix operator %~~: infixr10 // over part whole
+
+
+public func %~ <A, B, S, T> (
+    _ setter: Setter <A, B, S, T>,
+    _ f: @escaping (A) -> B) -> (S) -> T {
+    return over(setter, f)
+}
+
+public func %~ <S, A> (
+    _ setter: MutableSetter <S, A>,
+    _ set: (@escaping (inout A) -> Void))
+    -> (inout S) -> Void {
+        return mver(setter, set)
+}
+
+public func %~ <S: AnyObject, A> (
+    _ setter: (@escaping (inout A) -> Void) -> (S) -> Void,
+    _ set: (@escaping (inout A) -> Void))
+    -> (S) -> Void {
+        return mver(setter, set)
+}
+
+public func .~ <A, B, S, T> (
+    _ setter: Setter <A, B, S, T>,
+    _ value: B) -> (S) -> T {
+    return set(setter, value)
+}
+
+public func .~ <S, A> (_ setter: MutableSetter <S, A>, _ value: A) -> (inout S) -> Void {
+    return mut(setter, value)
+}
+
+public func .~ <S: AnyObject, A> (_ setter: (@escaping (inout A) -> Void) -> (S) -> Void, _ value: A) -> (S) -> Void {
+    return mut(setter, value)
+}
+
