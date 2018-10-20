@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'SwiftPrelude_Example' do
   pod 'SwiftPrelude', :path => '../'
+  pod 'Result', '~> 4.0.0'
+  pod 'Swiftx', '~> 0.5.2'
 
   target 'SwiftPrelude_Tests' do
     inherit! :search_paths

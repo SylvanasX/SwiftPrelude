@@ -1,16 +1,27 @@
 PODS:
+  - Result (4.0.0)
   - SwiftPrelude (0.2.4)
+  - Swiftx (0.5.2)
 
 DEPENDENCIES:
+  - Result (~> 4.0.0)
   - SwiftPrelude (from `../`)
+  - Swiftx (~> 0.5.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Result
+    - Swiftx
 
 EXTERNAL SOURCES:
   SwiftPrelude:
     :path: "../"
 
 SPEC CHECKSUMS:
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   SwiftPrelude: 44b6772413fe749d06320d2bb85d4eb352d72a0a
+  Swiftx: 0ca649b0b45e0d53b310ff905ff6165f5d546cb6
 
-PODFILE CHECKSUM: 4c99d0bbde38e7ff1ea0609ef248e0988cd7e4c4
+PODFILE CHECKSUM: d79377c942e166d999c2828ba04ffecd1fe245b4
 
 COCOAPODS: 1.5.3
