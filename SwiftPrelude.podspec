@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftPrelude'
-  s.version          = '0.2.4'
+  s.version          = '0.2.5'
   s.summary          = 'SwiftPrelude'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ SwiftPrelude.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.9'
 
   s.source_files = 'SwiftPrelude/Classes/**/*'
 
