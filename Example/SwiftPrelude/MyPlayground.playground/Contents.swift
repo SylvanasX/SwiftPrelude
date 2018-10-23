@@ -60,13 +60,20 @@ func >>- <E, A, B> (_ a: Result<A, E>, _ f: (A) -> Result<B, E>) -> Result<B, E>
     return a.flatMap(f)
 }
 
+//public func >=> <A, B, C, E> (_ f: @escaping (A) -> B?, _ g: @escaping (B) -> C?) -> (A) -> C? {
+//    return f >>> flatMap(g)
+//}
+
 let account = Account()
 let service: AccountService = AccountServiceImp()
 //account |>
 // 3.2.3
 func transfer(from: Account, to: Account, amount: Amount) -> Result<(Account, Account, Amount), AccountError> {
-    return service.debit(account: from, amount: amount) >>- { a in
-        service.credit(account: to, amout: amount) >>- { b in Result.init(value: (a, b, amount))}
-    }
+    return service.debit(account: from, amount: amount)
+        >>- { a in service.credit(account: to, amout: amount)
+            >>- { b in
+                Result.init(value: (a, b, amount))
+            }
+        }
 }
 
