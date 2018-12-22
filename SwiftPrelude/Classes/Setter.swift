@@ -51,7 +51,6 @@ public func mut <S: AnyObject, A> (_ setter: (@escaping (inout A) -> Void) -> (S
 //infix operator ..: infixr11 // compose
 //infix operator %~~: infixr10 // over part whole
 
-
 public func %~ <A, B, S, T> (
     _ setter: Setter <A, B, S, T>,
     _ f: @escaping (A) -> B) -> (S) -> T {
@@ -72,6 +71,14 @@ public func %~ <S: AnyObject, A> (
         return mver(setter, set)
 }
 
+public func %~ <Root, Value> (_ kp: WritableKeyPath<Root, Value>, _ update: @escaping (inout Value) -> Void) -> (inout Root) -> Void {
+    return mver(kp, update)
+}
+
+public func %~ <Root, Value> (_ kp: ReferenceWritableKeyPath<Root, Value>, _ update: @escaping (inout Value) -> Void) -> (Root) -> Void {
+    return mver(kp, update)
+}
+
 public func .~ <A, B, S, T> (
     _ setter: Setter <A, B, S, T>,
     _ value: B) -> (S) -> T {
@@ -86,3 +93,18 @@ public func .~ <S: AnyObject, A> (_ setter: (@escaping (inout A) -> Void) -> (S)
     return mut(setter, value)
 }
 
+public func .~ <Root, Value> (_ kp: WritableKeyPath<Root, Value>, _ value: Value) -> (inout Root) -> Void {
+    return mut(kp, value)
+}
+
+public func .~ <Root, Value> (_ kp: ReferenceWritableKeyPath<Root, Value>, _ value: Value) -> (Root) -> Void {
+    return mut(kp, value)
+}
+
+public func § <Root, Value> (_ kp: WritableKeyPath<Root, Value>, _ value: Value) -> (inout Root) -> Void {
+    return mut(kp, value)
+}
+
+public func § <Root, Value> (_ kp: ReferenceWritableKeyPath<Root, Value>, _ value: Value) -> (Root) -> Void {
+    return mut(kp, value)
+}
