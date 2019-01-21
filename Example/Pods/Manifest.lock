@@ -1,6 +1,6 @@
 PODS:
   - Result (4.0.0)
-  - SwiftPrelude (0.2.5)
+  - SwiftPrelude (0.2.6)
   - Swiftx (0.5.2)
 
 DEPENDENCIES:
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
-  SwiftPrelude: f5eaed0e35c1225112524e07be4a269eeab96474
+  SwiftPrelude: 47d90e765305867cff58d147af1951e77140ed87
   Swiftx: 0ca649b0b45e0d53b310ff905ff6165f5d546cb6
 
 PODFILE CHECKSUM: d79377c942e166d999c2828ba04ffecd1fe245b4

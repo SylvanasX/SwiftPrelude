@@ -29,4 +29,4 @@ infix operator ..: infixr11 // compose
 infix operator %~~: infixr10 // over part whole
 
 // KeyPath set
-infix operator §: infixr10 // set
+infix operator …: infixr10 // set

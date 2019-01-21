@@ -15,10 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad() 
         
         view
-            |> \UIView.tag § 1
-            <> \UIView.backgroundColor § .green
-            <> \UIView.layer.cornerRadius § 2.0
-            <> \UIView.layer.borderColor § UIColor.red.cgColor
+            |> \.tag … 1
+            <> \.backgroundColor … .green
+            <> \.layer.cornerRadius … 2.0
+            <> \UIView.layer.borderColor … UIColor.red.cgColor
+        
     }
 
     override func didReceiveMemoryWarning() {

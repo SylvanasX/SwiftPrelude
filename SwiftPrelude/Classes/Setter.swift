@@ -101,10 +101,14 @@ public func .~ <Root, Value> (_ kp: ReferenceWritableKeyPath<Root, Value>, _ val
     return mut(kp, value)
 }
 
-public func § <Root, Value> (_ kp: WritableKeyPath<Root, Value>, _ value: Value) -> (inout Root) -> Void {
+public func … <Root, Value> (_ kp: WritableKeyPath<Root, Value>, _ value: Value) -> (inout Root) -> Void {
     return mut(kp, value)
 }
 
-public func § <Root, Value> (_ kp: ReferenceWritableKeyPath<Root, Value>, _ value: Value) -> (Root) -> Void {
+public func … <Root, Value> (_ kp: ReferenceWritableKeyPath<Root, Value>, _ value: Value) -> (Root) -> Void {
     return mut(kp, value)
 }
+
+
+
+
