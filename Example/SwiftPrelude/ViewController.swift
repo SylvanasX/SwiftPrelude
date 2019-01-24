@@ -19,7 +19,6 @@ class ViewController: UIViewController {
             <> \.backgroundColor … .green
             <> \.layer.cornerRadius … 2.0
             <> \UIView.layer.borderColor … UIColor.red.cgColor
-        
     }
 
     override func didReceiveMemoryWarning() {

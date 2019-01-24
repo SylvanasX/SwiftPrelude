@@ -74,7 +74,13 @@ public func >=> <R, A, B, C> (lhs: @escaping (A) -> ((R) -> B), rhs: @escaping (
     return { a in flatMap(rhs, lhs(a)) }
 }
 
+public func first <A, B, C> (_ a2b: @escaping (A) -> B) -> ((A, C)) -> (B, C) {
+    return { (a2b($0.0), $0.1) }
+}
 
+public func second <A, B, C> (_ a2b: @escaping (A) -> B) -> ((C, A)) -> (C, B) {
+    return { ($0.0, a2b($0.1)) }
+}
 
 
 
