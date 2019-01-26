@@ -101,6 +101,12 @@ public func .~ <Root, Value> (_ kp: ReferenceWritableKeyPath<Root, Value>, _ val
     return mut(kp, value)
 }
 
+public func … <A, B, S, T> (
+    _ setter: Setter <A, B, S, T>,
+    _ value: B) -> (S) -> T {
+    return set(setter, value)
+}
+
 public func … <Root, Value> (_ kp: WritableKeyPath<Root, Value>, _ value: Value) -> (inout Root) -> Void {
     return mut(kp, value)
 }
