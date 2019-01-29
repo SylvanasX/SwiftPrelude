@@ -107,6 +107,10 @@ public func … <A, B, S, T> (
     return set(setter, value)
 }
 
+public func … <Root, Value> (_ kp: WritableKeyPath<Root, Value>, _ value: Value) -> (Root) -> Root {
+    return set(kp, value)
+}
+
 public func … <Root, Value> (_ kp: WritableKeyPath<Root, Value>, _ value: Value) -> (inout Root) -> Void {
     return mut(kp, value)
 }
