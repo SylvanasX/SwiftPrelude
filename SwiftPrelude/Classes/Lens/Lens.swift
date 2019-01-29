@@ -73,10 +73,12 @@ public func .~ <Whole, Part> (_ keyPath: WritableKeyPath<Whole, Part>, part: Par
 }
 
 // KeyPath over
+
+/*
 public func %~ <Whole, Part> (_ keyPath: WritableKeyPath<Whole, Part>, f: @escaping (Part) -> Part) -> (Whole) -> Whole {
     return lens(keyPath) %~ f
 }
-
+*/
 
 
 

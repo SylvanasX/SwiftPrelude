@@ -57,6 +57,13 @@ public func %~ <A, B, S, T> (
     return over(setter, f)
 }
 
+public func %~ <Root, Value> (
+    _ kp: WritableKeyPath<Root, Value>,
+    _ update: (@escaping (Value) -> Value))
+    -> (Root) -> Root {
+        return over(kp, update)
+}
+
 public func %~ <S, A> (
     _ setter: MutableSetter <S, A>,
     _ set: (@escaping (inout A) -> Void))
